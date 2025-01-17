@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: python-evtx
+Version: 0.7.4
+Summary: Pure Python parser for recent Windows event log files (.evtx).
+Home-page: https://github.com/williballenthin/python-evtx
+Author: Willi Ballenthin
+Author-email: willi.ballenthin@gmail.com
+License: Apache 2.0 License
+Platform: UNKNOWN
+Requires-Dist: six
+Requires-Dist: hexdump (==3.3)
+Requires-Dist: more-itertools (==5.0.0)
+Requires-Dist: zipp (==1.0.0)
+Requires-Dist: configparser (==4.0.2)
+Requires-Dist: pyparsing (==2.4.7)
+Provides-Extra: test
+Requires-Dist: pytest-cov (==2.11.1) ; extra == 'test'
+Requires-Dist: pytest (==4.6.11) ; extra == 'test'
+Requires-Dist: lxml (==4.6.3) ; extra == 'test'
+
+python-evtx is a pure Python parser for Windows Event Log files (those with the file extension ".evtx"). The module provides programmatic access to the File and Chunk headers, record templates, and event entries. For example, you can use python-evtx to review the event logs of Windows 7 systems from a Mac or Linux workstation. The structure definitions and parsing strategies were heavily inspired by the work of Andreas Schuster and his Perl implementation "Parse-Evtx".
+
+
